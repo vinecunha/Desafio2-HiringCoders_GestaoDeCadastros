@@ -17,4 +17,4 @@ _Bora lá? Então valendo! Esse desafio é individual, mas incentivamos que voc�
 
 Valeeendo \o/
 
-Link do projeto desenvolvido: 
+Link do projeto desenvolvido: https://viniciusmartins-projeto2.netlify.app/
