@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Cadastros - Projeto #2 Hiring Coders</title>
+
+    <style type="text/css">
+        @import url(../../css/responsiveTiny.css) (min-width:200px);
+        @import url(../../css/responsiveSmall.css) (min-width:300px);
+        @import url(../../css/style.css) (min-width:600px);
+        @import url(../../css/responsiveBigger.css) (min-width:1024px);
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        @import url("https://unpkg.com/aos@2.3.1/dist/aos.css");
+    </style>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+<body>
+    <header class="header" id="header">
+        <i class="fas fa-robot logo"></i>
+
+        <nav class="menu" data-aos="fade" data-aos-duration="1000">
+            <ul>
+                <li><a href="../../index.html"">Cadastros</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="container_card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+            <a href="../../index.html" class="default_a"><i class="fas fa-arrow-circle-left"></i> Voltar</a>
+            <h1 class="default_h1"><strong>Produtos Registrados</strong></h1>
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>PRODUTO</th>
+                    <th>MARCA</th>
+                    <th>PREÇO</th>
+                    <th>DESCRIÇÃO</th>
+                </thead>
+                <tbody>
+                    <td id="list-id-prod"></td>
+                    <td id="list-nome-prod"></td>
+                    <td id="list-marca-prod"></td>
+                    <td id="list-price-prod"></td>
+                    <td id="list-descr-prod"></td>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer id="footer">          
+        <small> <i class="fas fa-code"></i> Developed with <i class="fas fa-coffee"></i> by vinecunha.</small>
+        <div class="socials" data-aos="flip-up" data-aos-duration="1000" data-aos-anchor="#header"><a href="https://www.github.com/vinecunha" target="blank"> &#xf09b </a><a href="https://www.linkedin.com.br/in/vcmartins" target="blank">&#xf0e1 </a><a href="https://wa.me/5521979820741?text=Olá,%20meu%20amigo!" target="blank"> &#xf232 </a></div>
+    </footer>
+    <script type="text/javascript" src="../../js/script.js"></script>
+    <script type="text/javascript" src="../../js/produtos.js"></script>
+    <script>listProdutos()</script>
+</body>
+</html>

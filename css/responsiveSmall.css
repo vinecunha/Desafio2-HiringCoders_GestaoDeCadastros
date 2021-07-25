@@ -1,0 +1,276 @@
+@media screen and (max-width: 600px){
+    *{
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    html{
+        background: linear-gradient(to bottom right, #ddd, #fff);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    html::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    html::-webkit-scrollbar-thumb {
+        background: #262626;
+        border-radius: 10px;
+        box-shadow: inset 2px 2px 2px hsla(0,0%,0%,.25),inset -2px -2px 2px rgba(0,0,0,.5);
+    }
+    html::-webkit-scrollbar-track {
+        background: linear-gradient(90deg,#262626,#262626 1px,#111 0,#111);
+    }
+
+    main{
+        min-height: 400px;
+    }
+
+    /* HEADER */
+    .header{
+        width: 100%;
+        height: 90px;
+        background-color: #2f4f4f;
+        border-bottom:1px solid #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    /* LOGO */
+    .logo{
+        font-size: 10vw;
+        color: #aaa;
+    }
+
+    /* MENU */
+    nav.menu ul{
+        width: 100%;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    nav.menu ul li a{
+        text-decoration: none;
+        padding: 0;
+        color:#aaa;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+
+    nav.menu ul li a:hover{
+        color:#fff;
+        -webkit-transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+    }
+
+    /* BOX CENTRAL */
+    .container_options{
+        width: 95%;
+        margin: 5% auto;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #fff;
+        border: 1px solid #aaa;
+        border-radius: .3rem !important;
+    }
+
+    .container_card{
+        width: 95%;
+        margin: 5% auto;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #fff;
+        border: 1px solid #aaa;
+        border-radius: .3rem !important;
+    }
+
+    .container_options ul{
+        width: 100%;
+        padding: 0;
+        list-style: none;
+    }
+
+    .container_options ul li a{
+        text-decoration: none;
+        color:#aaa;
+        text-transform: uppercase;
+        padding: 0;
+        font-family: 'Poppins',FontAwesome, sans-serif;
+        font-size:1em;
+    }
+
+    .container_options ul li a:hover{
+        color: #2f4f4f;
+    }
+
+    .default_a{
+        width: 100%;
+        text-align:end;
+        text-decoration: none;
+        color: #aaa;
+        font-family: 'Poppins', sans-serif;
+        font-size: .8em;
+    }
+    .default_a:hover, .default_a:focus{color:#2f4f4f;}
+
+    form.container_form{
+        width: 100%;
+        margin: 1% 0;
+    }
+
+    .inputs{
+        width: 100%;
+        padding: 2%;
+        margin: 1% 0;
+        border: none;
+        border-bottom: 1px solid #aaa;
+        font-family: 'Poppins', FontAwesome, sans-serif;
+    }
+    .inputs:focus{
+        outline:none; 
+        border-bottom:3px solid #2f4f4f;
+    }
+
+    .control-form{
+        font-family: 'Poppins', FontAwesome, sans-serif;
+        padding: 2%;
+        margin: 2% 0;
+    }
+
+    #submit{
+        background-color: #2f4f4f;
+        color: #fff;
+        border: none !important;
+    }
+    #submit:hover, #submit:focus{
+        background-color: #427070;
+        border: none !important;
+    }
+    #reset{
+        color: #f00;
+        border: none !important;
+        background-color: #fff;
+    }
+    #reset:hover, #reset:focus{
+        background-color: #f00;
+        color: #fff;
+        border: none !important;
+    }
+
+    .default_h1{
+        width: 100%;
+        padding: 1%;
+        font: normal 1.2em FontAwesome, 'Poppins',sans-serif;
+        color: #2f4f4f;
+        text-transform: uppercase;
+    }
+    ul h1.default_h1{
+        display: none;
+    }
+
+    table{
+        width: 100%;
+        margin: 2% 0;
+        border-collapse: collapse;
+        border: none;
+        background-color: #fff;
+        display: block;
+        position: relative;
+    }
+    table thead{
+        width: auto;
+        float: left;
+    }
+
+    table tdbody{
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
+
+    table thead th{
+        min-height: 50px;
+        border: 1px solid #aaa;
+        padding: 1%;
+        text-align: center;
+        font-family: 'Poppins',sans-serif;
+        font-size: .9em;
+        background-color: #2f4f4f;
+        color: #fff;
+        display: block;
+    }
+
+    table tbody td{
+        display: block;
+        height: 50px;
+        border: 1px solid #aaa;
+        padding: 1%;
+        text-align: center;
+        font-family: 'Poppins',sans-serif;
+        font-size: .8em;
+    }
+
+    /* FOOTER */
+    footer{
+        width: 100%;
+        height: 100px;
+        bottom: 0;
+        border-top: 1px solid #333;
+        background-color: #2f4f4f;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    small{
+        width: 95%;
+        font: normal 1em "Segoe UI";
+        color: #aaa;
+        padding: 2% 0;
+        text-align: center;
+    }
+    .socials{
+        width: 95%;
+        font: normal 1.5em FontAwesome;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .socials a{
+        color: #aaa;
+        margin: 0 1%;
+        text-decoration: none;
+    }
+
+    .socials a:hover{
+        color: #fff;
+        -webkit-transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+    }
+    
+    }
